@@ -1,8 +1,20 @@
-export default function Contact() {
+import ContactForm from "../components/ContactForm";
+
+const Contact = () => {
   return (
-    <div style={{ width: '100%', height: '100%', padding: '40px', display: 'flex', flexDirection: 'column' }}>
+    <main>
       <h1>Contacto</h1>
-      <p>Pantalla de contactos.</p>
-    </div>
+
+      <section>
+        <p>
+          Si deseas más información sobre nuestros servicios, completa el
+          siguiente formulario y nos pondremos en contacto contigo.
+        </p>
+      </section>
+
+      <ContactForm />
+    </main>
   );
-}
+};
+
+export default Contact;
